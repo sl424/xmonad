@@ -1,0 +1,1216 @@
+XMonad is recompiling and replacing itself another XMonad process because the current process is called "xmonad" but the compiled configuration should be called "xmonad-x86_64-linux"
+XMonad will use ghc to recompile, because "/home/sl424/.xmonad/build" does not exist.
+XMonad doing recompile because some files have changed.
+XMonad recompilation process exited with success!
+conky: desktop window (3ad) is root window
+conky: window type - override
+conky: drawing to created window (0x1000002)
+conky: drawing to double buffer
+conky: forked to background, pid is 542
+
+[ 10/11/2019 01:22:58.496 vsync_opengl_swc_init ERROR ] Failed to load a swap control extension.
+[ 10/11/2019 01:22:58.496 session_init FATAL ERROR ] Failed to initialize the backend
+rfkill: cannot open /dev/rfkill: No such file or directory
+rfkill: cannot read /dev/rfkill: Bad file descriptor
+WARNING: 2019-10-11 01:23:00,621: create_menu() 'Variety Slideshow is not installed. This is an optional extension adding pan-and-zoom slideshows to Variety: see https://github.com/peterlevi/variety-slideshow for details'
+
+(pamac-tray:522): Gdk-CRITICAL **: 01:23:00.743: gdk_window_thaw_toplevel_updates: assertion 'window->update_and_descendants_freeze_count > 0' failed
+user error (Error in function getWindowAttributes)
+Exception in thread Thread-6:
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.7/threading.py", line 1166, in run
+    self.function(*self.args, **self.kwargs)
+  File "/usr/lib/python3.7/site-packages/variety/VarietyWindow.py", line 1006, in prepare_earth_downloader
+    dl.download_one()
+  File "/usr/lib/python3.7/site-packages/variety/EarthDownloader.py", line 39, in download_one
+    downloaded = self.save_locally(self.location, EARTH_IMAGE_URL, force_download=True, extra_metadata={'headline': 'World Sunlight Map'})
+  File "/usr/lib/python3.7/site-packages/variety/Downloader.py", line 117, in save_locally
+    raise e
+  File "/usr/lib/python3.7/site-packages/variety/Downloader.py", line 112, in save_locally
+    r = Util.request(image_url, stream=True)
+  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 572, in request
+    r.raise_for_status()
+  File "/usr/lib/python3.7/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 503 Server Error: Service Temporarily Unavailable for url: https://static.die.net/earth/mercator/1600.jpg
+
+ERROR: 2019-10-11 01:24:00,735: request() 'SSL Error for url https://api.desktoppr.co/1/wallpapers/random:'
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 344, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 370, in connect
+    ssl_context=context)
+  File "/usr/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 355, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.7/ssl.py", line 412, in wrap_socket
+    session=session
+  File "/usr/lib/python3.7/ssl.py", line 853, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.7/ssl.py", line 1117, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3.7/site-packages/urllib3/util/retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 571, in request
+    timeout=timeout)
+  File "/usr/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+ERROR: 2019-10-11 01:24:00,737: download_thread() 'Could not download wallpaper:'
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 344, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 370, in connect
+    ssl_context=context)
+  File "/usr/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 355, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.7/ssl.py", line 412, in wrap_socket
+    session=session
+  File "/usr/lib/python3.7/ssl.py", line 853, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.7/ssl.py", line 1117, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3.7/site-packages/urllib3/util/retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/variety/VarietyWindow.py", line 986, in download_thread
+    self.download_one_from(downloader)
+  File "/usr/lib/python3.7/site-packages/variety/VarietyWindow.py", line 1018, in download_one_from
+    file = downloader.download_one()
+  File "/usr/lib/python3.7/site-packages/variety/DesktopprDownloader.py", line 35, in download_one
+    response = Util.fetch_json(self.location)
+  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 593, in fetch_json
+    return Util.request(url, data).json()
+  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 571, in request
+    timeout=timeout)
+  File "/usr/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+ERROR: 2019-10-11 01:25:00,729: request() 'SSL Error for url https://api.desktoppr.co/1/wallpapers/random:'
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 344, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 370, in connect
+    ssl_context=context)
+  File "/usr/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 355, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.7/ssl.py", line 412, in wrap_socket
+    session=session
+  File "/usr/lib/python3.7/ssl.py", line 853, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.7/ssl.py", line 1117, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3.7/site-packages/urllib3/util/retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 571, in request
+    timeout=timeout)
+  File "/usr/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+ERROR: 2019-10-11 01:25:00,730: download_thread() 'Could not download wallpaper:'
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 344, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 370, in connect
+    ssl_context=context)
+  File "/usr/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 355, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.7/ssl.py", line 412, in wrap_socket
+    session=session
+  File "/usr/lib/python3.7/ssl.py", line 853, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.7/ssl.py", line 1117, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3.7/site-packages/urllib3/util/retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/variety/VarietyWindow.py", line 986, in download_thread
+    self.download_one_from(downloader)
+  File "/usr/lib/python3.7/site-packages/variety/VarietyWindow.py", line 1018, in download_one_from
+    file = downloader.download_one()
+  File "/usr/lib/python3.7/site-packages/variety/DesktopprDownloader.py", line 35, in download_one
+    response = Util.fetch_json(self.location)
+  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 593, in fetch_json
+    return Util.request(url, data).json()
+  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 571, in request
+    timeout=timeout)
+  File "/usr/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+ERROR: 2019-10-11 01:26:00,732: request() 'SSL Error for url https://api.desktoppr.co/1/wallpapers/random:'
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 344, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 370, in connect
+    ssl_context=context)
+  File "/usr/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 355, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.7/ssl.py", line 412, in wrap_socket
+    session=session
+  File "/usr/lib/python3.7/ssl.py", line 853, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.7/ssl.py", line 1117, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3.7/site-packages/urllib3/util/retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 571, in request
+    timeout=timeout)
+  File "/usr/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+ERROR: 2019-10-11 01:26:00,732: download_thread() 'Could not download wallpaper:'
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 344, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 370, in connect
+    ssl_context=context)
+  File "/usr/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 355, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.7/ssl.py", line 412, in wrap_socket
+    session=session
+  File "/usr/lib/python3.7/ssl.py", line 853, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.7/ssl.py", line 1117, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3.7/site-packages/urllib3/util/retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/variety/VarietyWindow.py", line 986, in download_thread
+    self.download_one_from(downloader)
+  File "/usr/lib/python3.7/site-packages/variety/VarietyWindow.py", line 1018, in download_one_from
+    file = downloader.download_one()
+  File "/usr/lib/python3.7/site-packages/variety/DesktopprDownloader.py", line 35, in download_one
+    response = Util.fetch_json(self.location)
+  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 593, in fetch_json
+    return Util.request(url, data).json()
+  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 571, in request
+    timeout=timeout)
+  File "/usr/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+ERROR: 2019-10-11 01:27:00,745: request() 'SSL Error for url https://api.desktoppr.co/1/wallpapers/random:'
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 344, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 370, in connect
+    ssl_context=context)
+  File "/usr/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 355, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.7/ssl.py", line 412, in wrap_socket
+    session=session
+  File "/usr/lib/python3.7/ssl.py", line 853, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.7/ssl.py", line 1117, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3.7/site-packages/urllib3/util/retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 571, in request
+    timeout=timeout)
+  File "/usr/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+ERROR: 2019-10-11 01:27:00,746: download_thread() 'Could not download wallpaper:'
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 344, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 370, in connect
+    ssl_context=context)
+  File "/usr/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 355, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.7/ssl.py", line 412, in wrap_socket
+    session=session
+  File "/usr/lib/python3.7/ssl.py", line 853, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.7/ssl.py", line 1117, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3.7/site-packages/urllib3/util/retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/variety/VarietyWindow.py", line 986, in download_thread
+    self.download_one_from(downloader)
+  File "/usr/lib/python3.7/site-packages/variety/VarietyWindow.py", line 1018, in download_one_from
+    file = downloader.download_one()
+  File "/usr/lib/python3.7/site-packages/variety/DesktopprDownloader.py", line 35, in download_one
+    response = Util.fetch_json(self.location)
+  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 593, in fetch_json
+    return Util.request(url, data).json()
+  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 571, in request
+    timeout=timeout)
+  File "/usr/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+ERROR: 2019-10-11 01:28:00,723: request() 'SSL Error for url https://api.desktoppr.co/1/wallpapers/random:'
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 344, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 370, in connect
+    ssl_context=context)
+  File "/usr/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 355, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.7/ssl.py", line 412, in wrap_socket
+    session=session
+  File "/usr/lib/python3.7/ssl.py", line 853, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.7/ssl.py", line 1117, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3.7/site-packages/urllib3/util/retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 571, in request
+    timeout=timeout)
+  File "/usr/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+ERROR: 2019-10-11 01:28:00,723: download_thread() 'Could not download wallpaper:'
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 344, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 370, in connect
+    ssl_context=context)
+  File "/usr/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 355, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.7/ssl.py", line 412, in wrap_socket
+    session=session
+  File "/usr/lib/python3.7/ssl.py", line 853, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.7/ssl.py", line 1117, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3.7/site-packages/urllib3/util/retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/variety/VarietyWindow.py", line 986, in download_thread
+    self.download_one_from(downloader)
+  File "/usr/lib/python3.7/site-packages/variety/VarietyWindow.py", line 1018, in download_one_from
+    file = downloader.download_one()
+  File "/usr/lib/python3.7/site-packages/variety/DesktopprDownloader.py", line 35, in download_one
+    response = Util.fetch_json(self.location)
+  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 593, in fetch_json
+    return Util.request(url, data).json()
+  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 571, in request
+    timeout=timeout)
+  File "/usr/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+ERROR: 2019-10-11 01:29:00,766: request() 'SSL Error for url https://api.desktoppr.co/1/wallpapers/random:'
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 344, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 370, in connect
+    ssl_context=context)
+  File "/usr/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 355, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.7/ssl.py", line 412, in wrap_socket
+    session=session
+  File "/usr/lib/python3.7/ssl.py", line 853, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.7/ssl.py", line 1117, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3.7/site-packages/urllib3/util/retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 571, in request
+    timeout=timeout)
+  File "/usr/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+ERROR: 2019-10-11 01:29:00,766: download_thread() 'Could not download wallpaper:'
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 344, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 370, in connect
+    ssl_context=context)
+  File "/usr/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 355, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.7/ssl.py", line 412, in wrap_socket
+    session=session
+  File "/usr/lib/python3.7/ssl.py", line 853, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.7/ssl.py", line 1117, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3.7/site-packages/urllib3/util/retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/variety/VarietyWindow.py", line 986, in download_thread
+    self.download_one_from(downloader)
+  File "/usr/lib/python3.7/site-packages/variety/VarietyWindow.py", line 1018, in download_one_from
+    file = downloader.download_one()
+  File "/usr/lib/python3.7/site-packages/variety/DesktopprDownloader.py", line 35, in download_one
+    response = Util.fetch_json(self.location)
+  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 593, in fetch_json
+    return Util.request(url, data).json()
+  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 571, in request
+    timeout=timeout)
+  File "/usr/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+ERROR: 2019-10-11 01:30:00,745: request() 'SSL Error for url https://api.desktoppr.co/1/wallpapers/random:'
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 344, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 370, in connect
+    ssl_context=context)
+  File "/usr/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 355, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.7/ssl.py", line 412, in wrap_socket
+    session=session
+  File "/usr/lib/python3.7/ssl.py", line 853, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.7/ssl.py", line 1117, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3.7/site-packages/urllib3/util/retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 571, in request
+    timeout=timeout)
+  File "/usr/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+ERROR: 2019-10-11 01:30:00,745: download_thread() 'Could not download wallpaper:'
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 344, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 370, in connect
+    ssl_context=context)
+  File "/usr/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 355, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.7/ssl.py", line 412, in wrap_socket
+    session=session
+  File "/usr/lib/python3.7/ssl.py", line 853, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.7/ssl.py", line 1117, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3.7/site-packages/urllib3/util/retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/variety/VarietyWindow.py", line 986, in download_thread
+    self.download_one_from(downloader)
+  File "/usr/lib/python3.7/site-packages/variety/VarietyWindow.py", line 1018, in download_one_from
+    file = downloader.download_one()
+  File "/usr/lib/python3.7/site-packages/variety/DesktopprDownloader.py", line 35, in download_one
+    response = Util.fetch_json(self.location)
+  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 593, in fetch_json
+    return Util.request(url, data).json()
+  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 571, in request
+    timeout=timeout)
+  File "/usr/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+ERROR: 2019-10-11 01:31:00,736: request() 'SSL Error for url https://api.desktoppr.co/1/wallpapers/random:'
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 344, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 370, in connect
+    ssl_context=context)
+  File "/usr/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 355, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.7/ssl.py", line 412, in wrap_socket
+    session=session
+  File "/usr/lib/python3.7/ssl.py", line 853, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.7/ssl.py", line 1117, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3.7/site-packages/urllib3/util/retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 571, in request
+    timeout=timeout)
+  File "/usr/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+ERROR: 2019-10-11 01:31:00,736: download_thread() 'Could not download wallpaper:'
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 344, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 370, in connect
+    ssl_context=context)
+  File "/usr/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 355, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.7/ssl.py", line 412, in wrap_socket
+    session=session
+  File "/usr/lib/python3.7/ssl.py", line 853, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.7/ssl.py", line 1117, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3.7/site-packages/urllib3/util/retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/variety/VarietyWindow.py", line 986, in download_thread
+    self.download_one_from(downloader)
+  File "/usr/lib/python3.7/site-packages/variety/VarietyWindow.py", line 1018, in download_one_from
+    file = downloader.download_one()
+  File "/usr/lib/python3.7/site-packages/variety/DesktopprDownloader.py", line 35, in download_one
+    response = Util.fetch_json(self.location)
+  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 593, in fetch_json
+    return Util.request(url, data).json()
+  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 571, in request
+    timeout=timeout)
+  File "/usr/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+user error (Error in function getWindowAttributes)
+/home/sl424/.cache/dmenu_run: No such file or directory
+ERROR: 2019-10-11 01:32:00,731: request() 'SSL Error for url https://api.desktoppr.co/1/wallpapers/random:'
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 344, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 370, in connect
+    ssl_context=context)
+  File "/usr/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 355, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.7/ssl.py", line 412, in wrap_socket
+    session=session
+  File "/usr/lib/python3.7/ssl.py", line 853, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.7/ssl.py", line 1117, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3.7/site-packages/urllib3/util/retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 571, in request
+    timeout=timeout)
+  File "/usr/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+ERROR: 2019-10-11 01:32:00,731: download_thread() 'Could not download wallpaper:'
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 344, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 370, in connect
+    ssl_context=context)
+  File "/usr/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 355, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.7/ssl.py", line 412, in wrap_socket
+    session=session
+  File "/usr/lib/python3.7/ssl.py", line 853, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.7/ssl.py", line 1117, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3.7/site-packages/urllib3/util/retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/variety/VarietyWindow.py", line 986, in download_thread
+    self.download_one_from(downloader)
+  File "/usr/lib/python3.7/site-packages/variety/VarietyWindow.py", line 1018, in download_one_from
+    file = downloader.download_one()
+  File "/usr/lib/python3.7/site-packages/variety/DesktopprDownloader.py", line 35, in download_one
+    response = Util.fetch_json(self.location)
+  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 593, in fetch_json
+    return Util.request(url, data).json()
+  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 571, in request
+    timeout=timeout)
+  File "/usr/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+ERROR: 2019-10-11 01:33:00,749: request() 'SSL Error for url https://api.desktoppr.co/1/wallpapers/random:'
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 344, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 370, in connect
+    ssl_context=context)
+  File "/usr/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 355, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.7/ssl.py", line 412, in wrap_socket
+    session=session
+  File "/usr/lib/python3.7/ssl.py", line 853, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.7/ssl.py", line 1117, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3.7/site-packages/urllib3/util/retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 571, in request
+    timeout=timeout)
+  File "/usr/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+ERROR: 2019-10-11 01:33:00,749: download_thread() 'Could not download wallpaper:'
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 344, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 370, in connect
+    ssl_context=context)
+  File "/usr/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 355, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.7/ssl.py", line 412, in wrap_socket
+    session=session
+  File "/usr/lib/python3.7/ssl.py", line 853, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.7/ssl.py", line 1117, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3.7/site-packages/urllib3/util/retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/variety/VarietyWindow.py", line 986, in download_thread
+    self.download_one_from(downloader)
+  File "/usr/lib/python3.7/site-packages/variety/VarietyWindow.py", line 1018, in download_one_from
+    file = downloader.download_one()
+  File "/usr/lib/python3.7/site-packages/variety/DesktopprDownloader.py", line 35, in download_one
+    response = Util.fetch_json(self.location)
+  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 593, in fetch_json
+    return Util.request(url, data).json()
+  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 571, in request
+    timeout=timeout)
+  File "/usr/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+ERROR: 2019-10-11 01:34:00,732: request() 'SSL Error for url https://api.desktoppr.co/1/wallpapers/random:'
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 344, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 370, in connect
+    ssl_context=context)
+  File "/usr/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 355, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.7/ssl.py", line 412, in wrap_socket
+    session=session
+  File "/usr/lib/python3.7/ssl.py", line 853, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.7/ssl.py", line 1117, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3.7/site-packages/urllib3/util/retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 571, in request
+    timeout=timeout)
+  File "/usr/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+ERROR: 2019-10-11 01:34:00,733: download_thread() 'Could not download wallpaper:'
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 344, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 370, in connect
+    ssl_context=context)
+  File "/usr/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 355, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.7/ssl.py", line 412, in wrap_socket
+    session=session
+  File "/usr/lib/python3.7/ssl.py", line 853, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.7/ssl.py", line 1117, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3.7/site-packages/urllib3/util/retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/variety/VarietyWindow.py", line 986, in download_thread
+    self.download_one_from(downloader)
+  File "/usr/lib/python3.7/site-packages/variety/VarietyWindow.py", line 1018, in download_one_from
+    file = downloader.download_one()
+  File "/usr/lib/python3.7/site-packages/variety/DesktopprDownloader.py", line 35, in download_one
+    response = Util.fetch_json(self.location)
+  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 593, in fetch_json
+    return Util.request(url, data).json()
+  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 571, in request
+    timeout=timeout)
+  File "/usr/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+ERROR: 2019-10-11 01:35:00,722: request() 'SSL Error for url https://api.desktoppr.co/1/wallpapers/random:'
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 344, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 370, in connect
+    ssl_context=context)
+  File "/usr/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 355, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.7/ssl.py", line 412, in wrap_socket
+    session=session
+  File "/usr/lib/python3.7/ssl.py", line 853, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.7/ssl.py", line 1117, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3.7/site-packages/urllib3/util/retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 571, in request
+    timeout=timeout)
+  File "/usr/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+ERROR: 2019-10-11 01:35:00,722: download_thread() 'Could not download wallpaper:'
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 344, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 370, in connect
+    ssl_context=context)
+  File "/usr/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 355, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.7/ssl.py", line 412, in wrap_socket
+    session=session
+  File "/usr/lib/python3.7/ssl.py", line 853, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.7/ssl.py", line 1117, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3.7/site-packages/urllib3/util/retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/site-packages/variety/VarietyWindow.py", line 986, in download_thread
+    self.download_one_from(downloader)
+  File "/usr/lib/python3.7/site-packages/variety/VarietyWindow.py", line 1018, in download_one_from
+    file = downloader.download_one()
+  File "/usr/lib/python3.7/site-packages/variety/DesktopprDownloader.py", line 35, in download_one
+    response = Util.fetch_json(self.location)
+  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 593, in fetch_json
+    return Util.request(url, data).json()
+  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 571, in request
+    timeout=timeout)
+  File "/usr/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1056)')))
